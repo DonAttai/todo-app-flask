@@ -5,8 +5,8 @@
 {% block body %} 
 
 <div class="row">
-    <div class="card mx-auto">
-        <div class="card-body">
+    <div class="col-md-6 col-sm-12 mx-auto">
+        <div class="card card-body">
             <form action="/update/{{todo.id}}" method="POST" autocomplete="off">
                 <input type="text", name="title", id="title", value="{{todo.title}}" class="">
                 <input type="submit", value="Update" class="btn btn-sm btn-info">
